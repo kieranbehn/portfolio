@@ -59,9 +59,9 @@ export class HomeComponent implements OnInit {
         },
         links: {
             color: "#ffffff",
-            distance: 150,
+            distance: 50,
             enable: false,
-            opacity: 0.5,
+            opacity: 0.25,
             width: 1
         },
         move: {
@@ -122,6 +122,10 @@ export class HomeComponent implements OnInit {
       img: 'assets/img/angular.svg'
     },
     {
+      name: 'Cordova',
+      img: 'assets/img/cordova.svg'
+    },
+    {
       name: 'NodeJS',
       img: 'assets/img/node-js.svg'
     },
@@ -133,6 +137,18 @@ export class HomeComponent implements OnInit {
       name: 'PHP',
       img: 'assets/img/php.svg'
     },
+    {
+      name: 'Firebase',
+      img: 'assets/img/firebase.svg'
+    },
+    {
+      name: 'iOS',
+      img: 'assets/img/apple.svg'
+    },
+    {
+      name: 'Android',
+      img: 'assets/img/android.svg'
+    }
   ];
 
   constructor() { }

@@ -16,11 +16,11 @@
         <!-- <div class="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
           <h1 class="mb-2 text-md italic leading-none tracking-normal text-slate-800 md:tracking-tight antialiased">To name a few:</h1>
         </div> -->
-        <div class="grid grid-cols-4 lg:grid-cols-8 gap-4 js-tilt">
+        <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2 js-tilt">
             <ng-container *ngFor="let logo of logos">
-                <div class="text-center p-2 md:p-8 lg:p-6 transform hover:scale-125 transition" (click)="logoName(logo)" (mouseenter)="logo.showName=true" (mouseleave)="logo.showName=false">
+                <div class="flex text-center p-4 md:p-6 lg:p-3 transform hover:scale-125 transition" (click)="logoName(logo)" (mouseenter)="logo.showName=true" (mouseleave)="logo.showName=false">
                     <img class="w-full mx-auto" draggable="false" [src]="logo.img" [alt]="logo.name + ' logo'" [title]="logo.name">
-                    <p *ngIf="logo.showName" class="text-white font-medium text-xs absolute left-0 right-0 bottom-0">{{ logo.name }}</p>
+                    <p *ngIf="logo.showName" class="text-white font-medium text-xs absolute left-0 right-0 bottom-0 sm:-bottom-1 md:bottom-0 lg:-bottom-3">{{ logo.name }}</p>
                 </div>
             </ng-container>
         </div>
