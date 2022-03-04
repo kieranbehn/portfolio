@@ -193,7 +193,7 @@ export class HomeComponent implements OnInit {
       .type('fullstack')
       .pause(500)
       .move(-5)
-      .type('-')
+      .type(' ')
       .move(5, {instant: true})
       .pause(3000)
       .delete()
