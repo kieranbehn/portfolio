@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
     showName?: boolean,
   }[] = [
     {
-      name: 'HTML5',
+      name: 'HTML',
       img: 'assets/img/html5.svg'
     },
     {
