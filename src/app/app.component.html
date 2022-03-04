@@ -3,17 +3,32 @@
       <div class="flex justify-between items-center border-b border-slate-700 py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a routerLink="/">
-            <span class="sr-only">Kieran Uddin</span>
-            <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-white.svg" alt="">
+            <span class="sr-only">K</span>
+            <!-- <img draggable="false" class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-white.svg" alt=""> -->
+            <!-- <img draggable="false" class="h-8 w-auto sm:h-10 rounded-lg" src="../assets/img/favicon.svg" alt=""> -->
+            <img draggable="false" class="h-8 w-auto sm:h-10 rounded-lg opacity-50 hover:opacity-100 transition" src="../assets/img/logo-hollow.svg" alt="">
           </a>
         </div>
         <nav class="flex space-x-10">  
-          <a href="#work" class="text-base font-medium text-white hover:text-slate-500 transition"> Work </a>
+          <a href="#portfolio" class="text-base font-medium text-white hover:text-slate-500 transition"> Portfolio </a>
           <a routerLink="/cv" class="text-base font-medium text-white hover:text-slate-500 transition"> CV </a>
-          <a href="#" class="text-base font-medium text-white hover:text-slate-500 transition"> Contact </a>
+          <a href="mailto:kieranbehn@gmail.com" class="text-base font-medium text-white hover:text-slate-500 transition"> Contact </a>
         </nav>
       </div>
     </div>
 </div>
 
 <router-outlet></router-outlet>
+
+<section class="bg-slate-100 relative">
+  <div class="px-6 mx-auto max-w-5xl py-6 border-t border-slate-300 text-slate-300 text-sm">
+    <div class="grid grid-cols-2 gap-2">
+      <div class="text-left">&copy; 2022 Kieran Uddin</div>
+      <div class="text-right">
+        <a href="https://www.linkedin.com/in/kieranuddin/" target="_blank">
+          <img class="w-5 ml-auto opacity-20" draggable="false" src="../assets/img/linkedin.svg" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
