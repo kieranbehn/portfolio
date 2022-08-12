@@ -29,7 +29,7 @@ export class CvComponent implements OnInit {
   ];
 
   public applications = [
-    'NodeJS',
+    'Node.js',
     // 'Composer',
     'MySQL',
     'Visual Studio Code',
@@ -52,9 +52,17 @@ export class CvComponent implements OnInit {
     
   ];
 
+  public workYears = this.calculateAge(new Date(2016, 1, 21));
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  calculateAge(birthday) { // birthday is a date
+    var ageDifMs = Date.now() - birthday;
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
 
 }
